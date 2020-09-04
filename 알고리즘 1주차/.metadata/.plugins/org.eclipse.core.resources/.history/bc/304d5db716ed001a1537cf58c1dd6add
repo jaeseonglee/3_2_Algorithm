@@ -1,0 +1,14 @@
+package ArrayList;
+
+public class ListTest {
+	public static void main(String args[]) {
+		List ArrayList = new List();
+		int i;
+		
+		for(i = 1; i <= 6; i++) 
+			ArrayList.addLast();
+			
+		
+		
+	}
+}

@@ -1,0 +1,52 @@
+/**	알고리즘 1주차
+ * 	Factorial 예제
+ *  작성일 : 2020.09.02
+ *  작성자 : 20165153 이재성
+ * 	프로그램 설명 : Factorial 실습 예제
+ */
+
+import java.util.Scanner;
+
+public class FactorialMain {
+	public static void main(String args[]) {
+		int num;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("input : ");
+		num = input.nextInt();
+		
+		System.out.println("loop Factorial(" + num + ") : ");
+		
+		
+	}
+	
+	private static int Factorial_loop(int n) {
+		int sum = 1;
+		for(int i = 1; i <= n; i++) {
+			sum *= 1;
+		}
+		
+		return sum;
+	}
+	
+	private static int Factorial_recursion(int n) {
+		if(n <= 1) {
+			return 1;
+		} 
+		else {
+			return n * Factorial_recursion(n -1);
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+package LinkedList;
+
+public class LinkedList {
+	private ListNode head;
+	
+	public void addLastNode(Object data) { // (1)
+		ListNode newNode = new ListNode();
+		
+		newNode.setData(data);
+		newNode.setLink(null); 
+		
+		if(head == null) {
+			head = newNode;
+			return;
+		}
+		
+		ListNode temp = head;
+		while(temp.getLink() != null) {
+			temp = temp.getLink();
+		}
+		temp.setLink(newNode);
+	}
+	
+	public void deleteLastNode() {
+		ListNode preNode, curNode;
+		
+		if(head == null) {
+			System.out.println("LinkedList가 비어있습니다.");
+			return;
+		}
+		
+		if(head.getLink() == null) {
+			head = null;
+			return;
+		}
+		
+		preNode = head;
+		curNode = head.getLink();
+		
+		while(curNode.getLink() != null) {
+			preNode = curNode;
+			curNode = curNode.getLink();
+		}
+		preNode.setLink(null);
+	}
+	
+	public void delete(Object data) { // (3)
+		ListNode preNode, curNode;
+		
+		if(head == null) {
+			System.out.println("LinkedList가 비어있습니다.");
+			return;
+		}
+		
+		if(head.getLink() == null) { 
+			head = null;
+			return;
+		}
+			
+		preNode = head;
+		curNode = head.getLink();
+		
+		if(data.equals(preNode.getData())) {
+			head = curNode;
+			preNode.setLink(null);
+			return;
+		}
+		
+		while(curNode != null) {
+			if(data.equals(curNode.getData())) {
+				if(curNode.getLink() == null) {
+					preNode.setLink(null);
+				}
+				else {
+					preNode.setLink(curNode.getLink());
+					curNode.setLink(null);
+				}
+				
+				
+				
+				
+				
+			}
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

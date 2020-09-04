@@ -1,0 +1,13 @@
+package LinkedList;
+
+public class LinkedListTest {
+	public static void main(String arg[]) {
+		LinkedList list = new LinkedList();
+		ListNode temp = new ListNode();
+		
+		
+		
+		
+	}
+
+}

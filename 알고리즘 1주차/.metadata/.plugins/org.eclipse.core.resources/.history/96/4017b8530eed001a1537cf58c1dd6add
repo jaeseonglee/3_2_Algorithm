@@ -1,0 +1,20 @@
+/**	알고리즘 1주차
+ * 	Factorial 예제
+ *  작성일 : 2020.09.02
+ *  작성자 : 20165153 이재성
+ * 	프로그램 설명 : Factorial 구현
+ */
+
+import java.util.Scanner;
+
+public class FactorialMain {
+	public static void main(String args[]) {
+		int num;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("input : ");
+		
+		
+	}
+}
